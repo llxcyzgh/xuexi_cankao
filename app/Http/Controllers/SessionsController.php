@@ -22,7 +22,7 @@ class SessionsController extends Controller
         ]);
 //        dd($credentials); // 是一个验证处理后的参数数组(过滤后?)
 
-        if (Auth::attempt($credentials)) {
+        if (Auth::attempt($credentials, $request->has('remember'))) {
             session()->flash('success', '欢迎回来');
             return redirect()->route('users.show', [Auth::user()]);
         } else {
@@ -34,8 +34,9 @@ class SessionsController extends Controller
     // 退出登录
     public function destroy()
     {
+//        dd(new Auth());
         Auth::logout();
-        session()->flash('success','您已成功退出');
+        session()->flash('success', '您已成功退出');
 //        return redirect()->route('login');
         return redirect('login');
     }

@@ -16,7 +16,7 @@
                         <a href="#" class="dropdown-item">编辑资料</a>
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item" id="logout">
-                            <form action="{{ route('logout',Auth::user()) }}" method="post">
+                            <form action="{{ route('logout') }}" method="post">
                                 {{ csrf_field() }}
                                 {{ method_field('delete') }}
                                 <button type="submit" class="btn btn-block btn-danger">退出登录</button>
