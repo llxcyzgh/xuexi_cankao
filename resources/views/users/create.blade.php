@@ -25,14 +25,14 @@
 
                     <div class="form-group">
                         <label for="password">密码: </label>
-                        <input type="text" name="password" id="password" class="form-control"
-                               value="{{ old('password') }}">
+                        <input type="password" name="password" id="password" class="form-control"
+                               value="{{ old('password') }}" onpaste="return false">
                     </div>
 
                     <div class="form-group">
-                        <label for="password_confimation">确认密码: </label>
-                        <input type="text" name="password_confimation" id="password_confimation" class="form-control"
-                               value="{{ old('password_confimation') }}">
+                        <label for="password_confirmation">确认密码: </label>
+                        <input type="password" name="password_confirmation" id="password_confirmation" class="form-control"
+                               value="{{ old('password_confirmation') }}" onpaste="return false">
                     </div>
 
                     <button type="submit" class="btn btn-primary">注册</button>
