@@ -30,7 +30,7 @@
                     <a href="{{ route('help') }}" class="nav-link">帮助</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">登录</a>
+                    <a href="{{ route('login') }}" class="nav-link">登录</a>
                 </li>
             @endif
         </ul>
