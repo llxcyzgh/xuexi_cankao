@@ -9,8 +9,8 @@ class XuexiController extends Controller
 {
     public function index()
     {
-//        $xuexis = Xuexi::all();
-        $xuexis = Xuexi::where('is_checked', true)->get();
+        $xuexis = Xuexi::all();
+//        $xuexis = Xuexi::where('is_checked', true)->get();
         return view('xuexi.index', compact('xuexis'));
     }
 

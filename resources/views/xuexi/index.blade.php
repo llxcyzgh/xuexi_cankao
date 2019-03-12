@@ -11,7 +11,7 @@
 <body>
 <div class="container">
     <ul class="list-group">
-        <li class="list-group-item">
+        <li class="list-group-item bg-dark text-light">
             <div class="row">
                 <div class="col-md-10">
                     题目
@@ -22,8 +22,8 @@
                 </div>
             </div>
         </li>
-        @foreach ($xuexis as $xuexi)
-            <li class="list-group-item">
+        @foreach ($xuexis as $key => $xuexi)
+            <li class="list-group-item {{ $key % 2 == 1 ? 'bg-info' :''}}">
                 <div class="row">
                     <div class="col-md-10">
                         {{ $xuexi->question }}
@@ -35,7 +35,7 @@
                 </div>
             </li>
         @endforeach
-        <li class="list-group-item">
+        <li class="list-group-item bg-dark text-light bg-secondary">
             <div class="row">
                 <div class="col-md-10">
                     题目

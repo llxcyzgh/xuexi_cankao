@@ -27,12 +27,34 @@
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label for="password_confirmation" class="col-md-4 col-form-label text-md-right">确认dfdfjfhdkihf密码</label>
+                        <div class="col-md-6">
+                            <input type="text" id="password_confirmation" name="password_confirmation"
+                                   class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="password_confirmation" class="col-md-4 col-form-label text-md-right">确dfdjagkj砷认密码</label>
+                        <div class="col-md-6">
+                            <input type="text" id="password_confirmation" name="password_confirmation"
+                                   class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="password_confirmation" class="col-md-4 col-form-label text-md-right">确认dfdf5ds4df5as5545密码</label>
+                        <div class="col-md-6">
+                            <input type="text" id="password_confirmation" name="password_confirmation"
+                                   class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <label for="password_confirmation" class="col-md-4 col-form-label text-md-right">确认密码</label>
                         <div class="col-md-6">
                             <input type="text" id="password_confirmation" name="password_confirmation"
                                    class="form-control">
                         </div>
                     </div>
+
 
                     <div class="form-group row">
                         <div class="offset-md-4 col-md-6">
